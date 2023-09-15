@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="semoboldgrey">
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+</resources>
