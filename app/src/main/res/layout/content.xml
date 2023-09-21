@@ -10,6 +10,7 @@
         android:id="@+id/paragraphe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxLines="25"
         android:text="write your note here"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

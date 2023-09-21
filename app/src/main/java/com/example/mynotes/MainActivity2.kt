@@ -13,8 +13,11 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        val data  = intent.extras!!.get("name")
-        Title.text = data.toString()
+        if (intent.getStringExtra("name") != null) {
+            val data = intent.getStringExtra("name")
+            Title.text = data
+        }
+
         val paragraph : ArrayList<ContentModel> = ArrayList()
         paragraph.add(ContentModel(contenu = "1\n" +
                 " 2\n" +
@@ -48,5 +51,10 @@ class MainActivity2 : AppCompatActivity() {
             val i = Intent(this@MainActivity2,MainActivity::class.java)
             startActivity(i)
         }
+    }
+
+   override fun onBackPressed() {
+        val t = Intent(this@MainActivity2,MainActivity::class.java)
+        startActivity(t)
     }
 }

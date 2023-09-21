@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="title"
+            android:textColor="@color/dark_grey"
             android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView3"
